@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Timeline.css'
-import Suggestions from './Suggestions'
+import Suggestions from '../suggestion/Suggestions';
 import Post from './Post'
 
 function Timeline() {

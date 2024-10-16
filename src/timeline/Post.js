@@ -8,11 +8,15 @@ import TelegramIcon from '@mui/icons-material/Telegram'
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder'
 
 function Post({user, postImage, likes, timestamp}) {
+  console.log('user post', user)
   return (
     <div className="post">
         <div className="post__header">
           <div className='post__headerAuthor'>
+          <span className="avatar">
             <Avatar>{user.charAt(0)}</Avatar>
+          </span>
+          
             {user} • <span>{timestamp}</span>
           </div>
           <MoreHorizIcon />
